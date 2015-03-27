@@ -13,15 +13,17 @@ RUN git clone https://github.com/evilhero/mylar.git ./app
 RUN mkdir /comics
 RUN mkdir /downloads
 RUN mkdir /torrents
+RUN mkdir /config
 
 # Expose the mylar home
 VOLUME /comics
 VOLUME /downloads
 VOLUME /torrents
 VOLUME /opt/mylar
+VOLUME /config
 
 # Expose the listening port
 EXPOSE 8090
 
 # Launch it
-CMD [ "python", "app/Mylar.py" ]
+CMD [ "python", "app/Mylar.py --datadir=/config" ]
