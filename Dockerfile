@@ -26,4 +26,4 @@ VOLUME /config
 EXPOSE 8090
 
 # Launch it
-CMD [ "python", "app/Mylar.py --datadir=/config" ]
+CMD [ "python", "app/Mylar.py", "--datadir=/config" ]
