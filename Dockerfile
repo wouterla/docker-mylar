@@ -2,7 +2,7 @@ FROM python:2
 MAINTAINER Wouter Lagerweij <wouter@lagerweij.com>
 
 # Download pre-requisites
-RUN pip install cheetah
+RUN pip install cheetah tzlocal
 
 # Download latest version
 RUN mkdir -p /opt/mylar
