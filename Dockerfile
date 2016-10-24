@@ -14,6 +14,7 @@ RUN mkdir /comics
 RUN mkdir /downloads
 RUN mkdir /torrents
 RUN mkdir /config
+RUN mkdir /nzbs
 
 # Expose the mylar home
 VOLUME /comics
@@ -21,6 +22,7 @@ VOLUME /downloads
 VOLUME /torrents
 VOLUME /opt/mylar
 VOLUME /config
+VOLUME /nzbs
 
 # Expose the listening port
 EXPOSE 8090
